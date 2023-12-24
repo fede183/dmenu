@@ -1,2 +1,2 @@
 #!/bin/sh
-dmenu_path | dmenu "$@" < "$cache" | grep -v -w -f dmenu_exclude | ${SHELL:-"/bin/sh"} &
+dmenu_path | dmenu "$@" | grep -v -w -f dmenu_exclude | ${SHELL:-"/bin/sh"} &
